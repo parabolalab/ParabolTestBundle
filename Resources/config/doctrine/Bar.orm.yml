@@ -1,0 +1,19 @@
+Parabol\TestBundle\Model\Bar:
+    type: mappedSuperclass
+    table: null
+    repositoryClass: Parabol\TestBundle\Repository\BarRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+            unique: true
+        description:
+            type: text
+            nullable: true
+    lifecycleCallbacks: {  }
